@@ -2,8 +2,7 @@
   <header class="navbar">
     <div class="nav-inner">
       <RouterLink to="/" class="brand">
-        <span class="badge">Pectics</span>
-        <span class="brand-name">个人网站</span>
+        <span class="brand-name">Pectics 的个人网站</span>
       </RouterLink>
       <nav class="nav-links">
         <RouterLink v-for="item in navItems" :key="item.to" :to="item.to" class="nav-link">
@@ -16,9 +15,9 @@
 
 <script setup>
 const navItems = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
-  { label: 'Projects', to: '/projects' },
+  { label: '主页', to: '/' },
+  { label: '关于', to: '/about' },
+  { label: '项目', to: '/projects' },
 ]
 </script>
 

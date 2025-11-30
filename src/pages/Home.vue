@@ -1,10 +1,12 @@
 <template>
-  <section class="section-card home">
-    <p class="badge">欢迎</p>
+  <section class="section-card">
+    <p class="badge">Welcome</p>
     <h1 class="section-title">欢迎来到我的个人网站</h1>
     <p class="muted">
-      我是 Pectics，来自合肥工业大学软件学院的软件工程专业，热爱 Vue、前端工程化以及 Minecraft 插件。
-      这个小站用来收纳我的简介与项目作品，也记录我一路的成长脚印。
+      我是 Pectics，合肥工业大学软件学院的一名软件工程专业学生。这是我的个人展示站点，汇集了我的简介、技术兴趣以及一些感兴趣的项目实践和作品展示。
+    </p>
+    <p class="muted">
+      本页面使用 Vue 3 和 Vite 构建，旨在提供简洁清晰的浏览体验。
     </p>
     <div class="keywords">
       <span v-for="tag in tags" :key="tag" class="keyword">{{ tag }}</span>
@@ -14,19 +16,15 @@
 </template>
 
 <script setup>
-const tags = ['Vue3', '前端工程化', '校园开发', '创意玩法设计']
+const tags = ['Java', 'Kotlin', 'Spring Boot', 'C++', 'Vue3', 'ASM']
 </script>
 
 <style scoped>
-.home {
-  display: grid;
-  gap: 1.25rem;
-}
-
 .keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .keyword {

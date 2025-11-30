@@ -1,8 +1,8 @@
 <template>
-  <section class="section-card projects">
+  <section class="section-card">
     <p class="badge">Projects</p>
     <h1 class="section-title">个人作品</h1>
-    <p class="muted">以下项目通过简单的数组数据驱动渲染，展示了我在校园及兴趣方向的实践。</p>
+    <p class="muted">以下项目通过简单的数组数据驱动渲染，展示了我在兴趣方向的实践。</p>
     <div class="grid" style="margin-top: 1rem;">
       <article v-for="project in projects" :key="project.name" class="project">
         <div class="project-header">
@@ -20,28 +20,24 @@
 <script setup>
 const projects = [
   {
-    name: '校园日程提醒小程序',
-    desc: '用 Vue 组件封装课表与 ToDo 模块，方便同学快速查看当天安排。',
-    link: 'https://example.com/schedule',
+    name: 'hfut-info：工大公开信息查询接口',
+    desc: '对工大的公开数据进行查询、整合、格式化，并提供一套便捷的接口服务。',
+    link: 'https://github.com/Pectics/hfut-info',
   },
   {
-    name: 'Minecraft 服务器小游戏插件',
-    desc: '设计玩法逻辑并实现排行榜、奖励等功能，提升玩家互动乐趣。',
+    name: 'hfutnet：工大的校园网自动登录连接工具',
+    desc: '使用C++编写的校园网登录工具，避免了手动在浏览器登录的繁琐操作。',
+    link: 'https://github.com/Pectics/hfutnet',
   },
   {
-    name: '个人作品集网站',
-    desc: '基于 Vue 3 + Vite 构建的展示型网站，聚合了我的简介与项目亮点。',
-    link: 'https://example.com/portfolio',
+    name: 'PermPacks：基于权限节点的 Minecraft 资源包栈管理插件',
+    desc: '使用 Kotlin 编写的用于管理 Minecraft 服务器中玩家资源包栈的插件，支持对象存储服务的自动对接。',
+    link: 'https://github.com/Pectics/PermPacks',
   },
 ]
 </script>
 
 <style scoped>
-.projects {
-  display: grid;
-  gap: 1rem;
-}
-
 .project {
   padding: 1rem;
   border: 1px solid #e6ebf2;
